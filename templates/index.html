@@ -11,5 +11,13 @@
           {% endfor %}
         </ul>
       </div>
+      
+      <div>
+        <!-- syntax for checking is a session was started -->
+        {% if session %}
+            <p>Hi {{session['username']}}</p>
+            <a href= "/logout">Log Out</a>
+        {% endif %}
+      </div>
     </body>
 </html>
